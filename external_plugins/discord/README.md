@@ -47,10 +47,7 @@ These are Claude Code commands — run `claude` to start a session first.
 Install the plugin:
 ```
 /plugin install discord@claude-plugins-official
-/reload-plugins
 ```
-
-Check that `/discord:configure` tab-completes. If not, restart your session.
 
 **5. Give the server the token.**
 
@@ -58,7 +55,7 @@ Check that `/discord:configure` tab-completes. If not, restart your session.
 /discord:configure MTIz...
 ```
 
-Writes `DISCORD_BOT_TOKEN=...` to `~/.claude/channels/discord/.env`. You can also write that file by hand, or set the variable in your shell environment — shell takes precedence.
+Writes `DISCORD_BOT_TOKEN=...` to `.claude/channels/discord/.env` in your project. You can also write that file by hand, or set the variable in your shell environment — shell takes precedence.
 
 **6. Relaunch with the channel flag.**
 
@@ -70,7 +67,7 @@ claude --channels plugin:discord@claude-plugins-official
 
 **7. Pair.**
 
-DM your bot on Discord — it replies with a pairing code. In your assistant session:
+With Claude Code running from the previous step, DM your bot on Discord — it replies with a pairing code. If the bot doesn't respond, make sure your session is running with `--channels`. In your Claude Code session:
 
 ```
 /discord:access pair <code>

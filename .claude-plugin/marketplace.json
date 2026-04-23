@@ -161,6 +161,21 @@
       ]
     },
     {
+      "name": "auth0",
+      "description": "Add authentication to any app with Auth0. This plugin detects your framework, scaffolds the right Auth0 SDK integration, and guides you through login, logout, sessions, and protected routes — using current SDK patterns.",
+      "author": {
+        "name": "Auth0"
+      },
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/auth0/agent-skills.git",
+        "path": "plugins/auth0",
+        "ref": "main"
+      },
+      "homepage": "https://auth0.com/docs/quickstart/agent-skills"
+    },
+    {
       "name": "autofix-bot",
       "description": "Code review agent that detects security vulnerabilities, code quality issues, and hardcoded secrets. Combines 5,000+ static analyzers to scan your code and dependencies for CVEs.",
       "author": {
